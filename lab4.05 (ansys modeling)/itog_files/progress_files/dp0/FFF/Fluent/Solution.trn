@@ -1,0 +1,286 @@
+Transcript Start Time:  20:13:49, 16 Jun 2025 RTZ 2 (зима) 
+Current Directory: "C:\Users\klimo"
+
+Build Time: Nov 29 2021 12:18:53 EST 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v221/fluent/ntbin/win64/fluent.exe
+
+------------------------------------------------------------------------------------------
+ID    Hostname        Core   O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n15   Timofey-Laptop  16/16  Windows-x64  18156  AMD Ryzen 7 5800H with Radeon Graphics  
+n14   Timofey-Laptop  15/16  Windows-x64  3432   AMD Ryzen 7 5800H with Radeon Graphics  
+n13   Timofey-Laptop  14/16  Windows-x64  21524  AMD Ryzen 7 5800H with Radeon Graphics  
+n12   Timofey-Laptop  13/16  Windows-x64  19288  AMD Ryzen 7 5800H with Radeon Graphics  
+n11   Timofey-Laptop  12/16  Windows-x64  11828  AMD Ryzen 7 5800H with Radeon Graphics  
+n10   Timofey-Laptop  11/16  Windows-x64  18552  AMD Ryzen 7 5800H with Radeon Graphics  
+n9    Timofey-Laptop  10/16  Windows-x64  276    AMD Ryzen 7 5800H with Radeon Graphics  
+n8    Timofey-Laptop  9/16   Windows-x64  19752  AMD Ryzen 7 5800H with Radeon Graphics  
+n7    Timofey-Laptop  8/16   Windows-x64  18792  AMD Ryzen 7 5800H with Radeon Graphics  
+n6    Timofey-Laptop  7/16   Windows-x64  15348  AMD Ryzen 7 5800H with Radeon Graphics  
+n5    Timofey-Laptop  6/16   Windows-x64  21516  AMD Ryzen 7 5800H with Radeon Graphics  
+n4    Timofey-Laptop  5/16   Windows-x64  19848  AMD Ryzen 7 5800H with Radeon Graphics  
+n3    Timofey-Laptop  4/16   Windows-x64  16304  AMD Ryzen 7 5800H with Radeon Graphics  
+n2    Timofey-Laptop  3/16   Windows-x64  1784   AMD Ryzen 7 5800H with Radeon Graphics  
+n1    Timofey-Laptop  2/16   Windows-x64  4672   AMD Ryzen 7 5800H with Radeon Graphics  
+n0*   Timofey-Laptop  1/16   Windows-x64  7664   AMD Ryzen 7 5800H with Radeon Graphics  
+host  Timofey-Laptop         Windows-x64  10884  AMD Ryzen 7 5800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cortex Process ID: 13016 
+License Server Path: C:\Program Files\ANSYS Inc\Shared Files\licensing\license_files\ansyslmd.lic 
+Reading setting file in cache: "C:\Users\klimo\AppData\Local\Temp\WB_klimo_16068_2\wbnew_files\dp0\FFF\Fluent\FFF.set"
+Reading "C:\Users\klimo\AppData\Local\Temp\WB_klimo_16068_2\wbnew_files\dp0\FFF\MECH\FFF.1.msh"...
+Buffering for file scan...
+
+   39393 nodes, binary.
+    1890 nodes, binary.
+  120069 2D interior faces, zone  1, binary.
+      15 2D velocity-inlet faces, zone  5, binary.
+     168 2D wall faces, zone  6, binary.
+      15 2D pressure-outlet faces, zone  7, binary.
+    1692 2D wall faces, zone  8, binary.
+   80676 triangular cells, zone  2, binary.
+
+
+
+Following contexts active in the case file have been de-activated because of their current context control conditions:
+"coupled-pseudo-transient"
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts................,
+		faces................,
+		nodes................,
+		cells................,
+        bandwidth reduction using Reverse Cuthill-McKee: 5001/79 = 63.3038
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	aerofoil
+	outlet
+	wall
+	inlet
+	surface_body
+	interior-surface_bodySetting surface_body (mixture) ... Done.
+ Setting zone id of surface_body to 2.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of inlet to 5.
+ Setting zone id of wall to 6.
+ Setting zone id of outlet to 7.
+ Setting zone id of aerofoil to 8.
+Done.
+Setting surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting wall (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting aerofoil (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Reading C:\\Users\\klimo\\AppData\\Local\\Temp\\WB_klimo_16068_2\\wbnew_files\\dp0\\FFF\\Fluent\\FFF.ip...
+Reading IP data ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	k
+	omega
+	hyb_init-0
+	hyb_init-1
+  Done.
+  Initializing values...
+  Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v221\fluent\fluent22.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Writing to Timofey-Laptop:"C:\Users\klimo\AppData\Local\Temp\WB_klimo_16068_2\wbnew_files\dp0\FFF\Fluent\FFF.1-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+       80676 cells,     1 zone  ...
+      121959 faces,     5 zones ...
+       41283 nodes,     1 zone  ...
+  Done.
+Done.
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+     1  1.0000e+00  2.0891e-04  5.4294e-05  1.2428e-01  5.0004e-01  0:03:18   99
+     2  6.4601e-01  1.7400e-04  6.4591e-05  2.5939e-01  4.9983e-01  0:03:16   98
+     3  3.3709e-01  1.3097e-04  3.4522e-05  9.7015e-02  4.9972e-01  0:03:14   97
+     4  2.2148e-01  1.0705e-04  2.2992e-05  3.5245e-02  4.9949e-01  0:02:53   96
+     5  1.6621e-01  9.4025e-05  1.7142e-05  1.8773e-02  4.9909e-01  0:02:55   95
+     6  1.3222e-01  8.5335e-05  1.3944e-05  1.2840e-02  4.9829e-01  0:02:56   94
+     7  1.0956e-01  7.7907e-05  1.1668e-05  1.0148e-02  4.9659e-01  0:02:56   93
+     8  9.4893e-02  7.1204e-05  9.9391e-06  9.2462e-03  4.9278e-01  0:02:38   92
+     9  8.3967e-02  6.4627e-05  8.5207e-06  8.3727e-03  4.8399e-01  0:02:41   91
+    10  7.3737e-02  5.7835e-05  7.3365e-06  7.9805e-03  4.6374e-01  0:02:44   90
+    11  6.4291e-02  5.0123e-05  6.4339e-06  7.5078e-03  4.1991e-01  0:03:03   89
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    12  5.5652e-02  4.3257e-05  5.6147e-06  7.1948e-03  3.3900e-01  0:03:00   88
+    13  4.8078e-02  3.7764e-05  4.8739e-06  6.9356e-03  2.2758e-01  0:02:57   87
+    14  4.2277e-02  3.3488e-05  4.1887e-06  6.7960e-03  1.2383e-01  0:03:12   86
+    15  3.7784e-02  2.9913e-05  3.5924e-06  6.6583e-03  5.7245e-02  0:03:23   85
+    16  3.3489e-02  2.6740e-05  3.1268e-06  6.5223e-03  2.4140e-02  0:03:31   84
+    17  2.9952e-02  2.3472e-05  2.6320e-06  6.6129e-03  9.7686e-03  0:03:36   83
+    18  2.6750e-02  2.0399e-05  2.2120e-06  6.5476e-03  3.9214e-03  0:03:40   82
+    19  2.3397e-02  1.7448e-05  1.8998e-06  6.4610e-03  1.5793e-03  0:03:43   81
+    20  2.0263e-02  1.4328e-05  1.6189e-06  6.0521e-03  6.6356e-04  0:03:28   80
+    21  1.7467e-02  1.1874e-05  1.3858e-06  5.3608e-03  2.6822e-04  0:03:32   79
+    22  1.5229e-02  9.8834e-06  1.1948e-06  4.5001e-03  1.1501e-04  0:03:18   78
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    23  1.3528e-02  8.3386e-06  1.0286e-06  3.7639e-03  5.8307e-05  0:03:07   77
+    24  1.2075e-02  7.1686e-06  9.0888e-07  3.1490e-03  2.7998e-05  0:02:58   76
+    25  1.0729e-02  6.2708e-06  8.2954e-07  2.6708e-03  1.4145e-05  0:02:51   75
+    26  9.8803e-03  5.7973e-06  8.0538e-07  2.3279e-03  8.2374e-06  0:02:44   74
+    27  9.0357e-03  5.5267e-06  8.3483e-07  2.0861e-03  5.5859e-06  0:02:39   73
+    28  8.4970e-03  5.3577e-06  8.8570e-07  1.9233e-03  4.4289e-06  0:02:34   72
+    29  8.1529e-03  5.3032e-06  9.3200e-07  1.8299e-03  3.8441e-06  0:02:30   71
+    30  8.0828e-03  5.4235e-06  9.9272e-07  1.7661e-03  3.4162e-06  0:02:26   70
+    31  8.0549e-03  5.4930e-06  1.0199e-06  1.6908e-03  3.0375e-06  0:02:23   69
+    32  7.8485e-03  5.3724e-06  1.0140e-06  1.6170e-03  2.7562e-06  0:02:06   68
+    33  7.6050e-03  5.2188e-06  9.9737e-07  1.5334e-03  2.5586e-06  0:02:06   67
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    34  7.2050e-03  5.0082e-06  9.5800e-07  1.4505e-03  2.3337e-06  0:02:06   66
+    35  6.8200e-03  4.7553e-06  9.0683e-07  1.3654e-03  2.1491e-06  0:02:05   65
+    36  6.4289e-03  4.4754e-06  8.4199e-07  1.2899e-03  1.9688e-06  0:02:04   64
+    37  6.0612e-03  4.1898e-06  7.7409e-07  1.2133e-03  1.7708e-06  0:02:03   63
+    38  5.6276e-03  3.8671e-06  7.0121e-07  1.1508e-03  1.5776e-06  0:02:02   62
+    39  5.1999e-03  3.5397e-06  6.3301e-07  1.0870e-03  1.3909e-06  0:02:00   61
+    40  4.6687e-03  3.2032e-06  5.6647e-07  1.0323e-03  1.2194e-06  0:02:11   60
+    41  4.1411e-03  2.8857e-06  5.0479e-07  9.7164e-04  1.0752e-06  0:02:06   59
+    42  3.6698e-03  2.5841e-06  4.4547e-07  9.0805e-04  9.3163e-07  0:02:03   58
+    43  3.2528e-03  2.2369e-06  3.8923e-07  8.3656e-04  8.3456e-07  0:01:59   57
+    44  2.8750e-03  1.9576e-06  3.4254e-07  7.7174e-04  7.5010e-07  0:01:56   56
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    45  2.5293e-03  1.7215e-06  2.9911e-07  7.0696e-04  6.7801e-07  0:01:53   55
+    46  2.2078e-03  1.5130e-06  2.6114e-07  6.4587e-04  6.1325e-07  0:01:50   54
+    47  1.9214e-03  1.3316e-06  2.2891e-07  5.9155e-04  5.5390e-07  0:01:48   53
+    48  1.7094e-03  1.1754e-06  2.0076e-07  5.4751e-04  4.9705e-07  0:01:46   52
+    49  1.5208e-03  1.0387e-06  1.7773e-07  5.0672e-04  4.4936e-07  0:01:43   51
+    50  1.3689e-03  9.2538e-07  1.5887e-07  4.7330e-04  4.0484e-07  0:01:31   50
+    51  1.2248e-03  8.2823e-07  1.4218e-07  4.3909e-04  3.6738e-07  0:01:41   49
+    52  1.1029e-03  7.4622e-07  1.2799e-07  4.1341e-04  3.3291e-07  0:01:38   48
+    53  1.0023e-03  6.7917e-07  1.1568e-07  3.8835e-04  3.0354e-07  0:01:36   47
+    54  9.2504e-04  6.2136e-07  1.0464e-07  3.6687e-04  2.7652e-07  0:01:33   46
+    55  8.6074e-04  5.7108e-07  9.4295e-08  3.4307e-04  2.5324e-07  0:01:31   45
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    56  7.9660e-04  5.2531e-07  8.5131e-08  3.2184e-04  2.3121e-07  0:01:29   44
+    57  7.3518e-04  4.8421e-07  7.7258e-08  2.9885e-04  2.1252e-07  0:01:27   43
+    58  6.7150e-04  4.4574e-07  7.0037e-08  2.7936e-04  1.9475e-07  0:01:24   42
+    59  6.1256e-04  4.1022e-07  6.3692e-08  2.5979e-04  1.7937e-07  0:01:22   41
+    60  5.5705e-04  3.7713e-07  5.8186e-08  2.4321e-04  1.6474e-07  0:01:20   40
+    61  5.0344e-04  3.4621e-07  5.3588e-08  2.2584e-04  1.5216e-07  0:01:26   39
+    62  4.6256e-04  3.1727e-07  4.9496e-08  2.1095e-04  1.4025e-07  0:01:22   38
+    63  4.2138e-04  2.8908e-07  4.5726e-08  1.9436e-04  1.2980e-07  0:01:19   37
+    64  3.8241e-04  2.6294e-07  4.2231e-08  1.8122e-04  1.2012e-07  0:01:16   36
+    65  3.4791e-04  2.3878e-07  3.8955e-08  1.6773e-04  1.1138e-07  0:01:13   35
+    66  3.1621e-04  2.1713e-07  3.5881e-08  1.5638e-04  1.0330e-07  0:01:10   34
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    67  2.8750e-04  1.9771e-07  3.3090e-08  1.4533e-04  9.5979e-08  0:01:08   33
+    68  2.6587e-04  1.8106e-07  3.0561e-08  1.3569e-04  8.9461e-08  0:01:05   32
+    69  2.4799e-04  1.6568e-07  2.8253e-08  1.2725e-04  8.3576e-08  0:01:03   31
+    70  2.3229e-04  1.5138e-07  2.6201e-08  1.2045e-04  7.8692e-08  0:01:01   30
+    71  2.1681e-04  1.3855e-07  2.4313e-08  1.1416e-04  7.4226e-08  0:00:59   29
+    72  2.0302e-04  1.2712e-07  2.2513e-08  1.0893e-04  7.0590e-08  0:00:51   28
+    73  1.8979e-04  1.1678e-07  2.0745e-08  1.0354e-04  6.6359e-08  0:00:50   27
+    74  1.7819e-04  1.0732e-07  1.9100e-08  9.9022e-05  6.3223e-08  0:00:49   26
+    75  1.6795e-04  9.8575e-08  1.7586e-08  9.4767e-05  5.9488e-08  0:00:43   25
+    76  1.5849e-04  9.0747e-08  1.6233e-08  9.0920e-05  5.6896e-08  0:00:42   24
+    77  1.4886e-04  8.3465e-08  1.4995e-08  8.7468e-05  5.3744e-08  0:00:42   23
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    78  1.4007e-04  7.6606e-08  1.3871e-08  8.4303e-05  5.1556e-08  0:00:41   22
+    79  1.3094e-04  7.0007e-08  1.2800e-08  8.1604e-05  4.8909e-08  0:00:39   21
+    80  1.2081e-04  6.3888e-08  1.1759e-08  7.9149e-05  4.7244e-08  0:00:34   20
+    81  1.1163e-04  5.8323e-08  1.0795e-08  7.6838e-05  4.5316e-08  0:00:33   19
+    82  1.0263e-04  5.3439e-08  9.9172e-09  7.4585e-05  4.4353e-08  0:00:33   18
+    83  9.4093e-05  4.8944e-08  9.0890e-09  7.2582e-05  4.3166e-08  0:00:31   17
+    84  8.6086e-05  4.4712e-08  8.3609e-09  7.0717e-05  4.2154e-08  0:00:30   16
+    85  7.9362e-05  4.0703e-08  7.6987e-09  6.9180e-05  4.1080e-08  0:00:26   15
+    86  7.2856e-05  3.7205e-08  7.1869e-09  6.7807e-05  4.0223e-08  0:00:25   14
+    87  6.7507e-05  3.4289e-08  6.7327e-09  6.6707e-05  3.9049e-08  0:00:24   13
+    88  6.2715e-05  3.1872e-08  6.3419e-09  6.5498e-05  3.8048e-08  0:00:22   12
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+    89  5.8663e-05  3.0022e-08  5.9728e-09  6.4640e-05  3.7007e-08  0:00:21   11
+    90  5.4946e-05  2.8321e-08  5.6490e-09  6.3811e-05  3.6057e-08  0:00:17   10
+    91  5.2385e-05  2.6975e-08  5.3624e-09  6.3196e-05  3.5044e-08  0:00:16    9
+    92  5.0406e-05  2.5750e-08  5.1637e-09  6.2358e-05  3.4275e-08  0:00:14    8
+    93  4.8778e-05  2.4818e-08  4.9812e-09  6.1753e-05  3.3721e-08  0:00:13    7
+    94  4.7029e-05  2.3799e-08  4.8300e-09  6.0983e-05  3.3226e-08  0:00:10    6
+    95  4.5509e-05  2.2980e-08  4.6684e-09  6.0306e-05  3.2759e-08  0:00:09    5
+    96  4.4198e-05  2.1983e-08  4.5227e-09  5.9544e-05  3.2222e-08  0:00:07    4
+    97  4.2772e-05  2.1082e-08  4.3588e-09  5.8987e-05  3.1675e-08  0:00:06    3
+    98  4.1071e-05  2.0187e-08  4.2083e-09  5.8365e-05  3.1304e-08  0:00:04    2
+    99  3.9608e-05  1.9294e-08  4.0377e-09  5.7923e-05  3.0859e-08  0:00:02    1
+
+  iter  continuity  x-velocity  y-velocity           k       omega     time/iter
+   100  3.8181e-05  1.8273e-08  3.8747e-09  5.7320e-05  3.0495e-08  0:00:00    0
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\klimo\\AppData\\Local\\Temp\\flntgz-108842 ...
+Done.
+
+Writing data to C:\\Users\\klimo\\AppData\\Local\\Temp\\WB_klimo_16068_2\\wbnew_files\\dp0\\FFF\\Fluent\\FFF.1.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	k
+	omega
+	hyb_init-0
+	hyb_init-1
+Done.
+
+Writing to Timofey-Laptop:"C:\Users\klimo\AppData\Local\Temp\WB_klimo_16068_2\wbnew_files\dp0\FFF\Fluent\FFF.1-2.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+       80676 cells,     1 zone  ...
+      121959 faces,     5 zones ...
+       41283 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to Timofey-Laptop:"C:\Users\klimo\AppData\Local\Temp\WB_klimo_16068_2\wbnew_files\dp0\FFF\Fluent\FFF.1-2-00100.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 100 iterations on 16 compute nodes
+  Average wall-clock time per iteration:              1.746 sec
+  Global reductions per iteration:                      112 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                        45035 messages
+  Data transfer per iteration:                        5.507 MB
+  LE solves per iteration:                                3 solves
+  LE wall-clock time per iteration:                   1.567 sec (89.7%)
+  LE global solves per iteration:                         8 solves
+  LE global wall-clock time per iteration:            0.047 sec (2.7%)
+  LE global matrix maximum size:                       180
+  AMG cycles per iteration:                           8.070 cycles
+  Relaxation sweeps per iteration:                     2044 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              364
+
+  Total wall-clock time:                            174.601 sec
+
+Transcript Stop Time:  20:18:45, 16 Jun 2025 RTZ 2 (зима) 
+Total Transcript Time: 4 Minute 56 Second.
